@@ -1,0 +1,39 @@
+---
+name: "Simple Notes"
+author: Mizu
+category: Web
+description: "
+Another classic note challenge... Or maybe not :)<br><br>
+
+Report a vulnerability: `curl -kX POST -d 'url={{URL}}' https://simplenotes.heroctf.fr/report`<br><br>
+
+URL : **https://simplenotes.heroctf.fr**<br>
+Format : **Hero{flag}**<br>
+Author : **Mizu**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Cl13nT_S1d3_P4tH_Tr4v3rS4l_T0_R3d1r3cT}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - web
+
+files:
+  - dist/simple_notes.zip
+
+state: visible
+version: "0.1"

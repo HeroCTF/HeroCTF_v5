@@ -1,0 +1,35 @@
+---
+name: Lossy
+author: yarienkiva
+category: Crypto
+description: "There are two types of people in the world :<br>
+1) Those who can cope with missing data
+Format : **Hero{flag}**<br>
+Author : **yarienkiva**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{R41ders_0f_th3_l0st_byt3s!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - crypto
+    - prog
+
+files:
+    - chall.py
+
+state: visible 
+version: "0.1"

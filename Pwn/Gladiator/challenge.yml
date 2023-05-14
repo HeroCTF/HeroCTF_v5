@@ -1,0 +1,35 @@
+name: "Gladiator"
+author: "Ghizmo x SoEasY"
+category: Pwn
+description: "Will you come out of the arena alive?<br><br>
+Host : **nc static-03.heroctf.fr 5004**<br>
+Format : Hero{flag}<br> Author : Ghizmo x SoEasY<br><br>
+<img class='img-fluid' src='https://media.discordapp.net/attachments/814526151061274674/1105180104201617500/ghizmo_Very_realistic_Amazonian_arena_with_a_gladiator_entering_b49c9c2e-4e54-432a-b37a-bfa014a8828c.png'> "
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Sp4rt4cus_w0uld_b3_pr0ud_0f_y0u!!!}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - hard
+
+files:
+    - gladiator
+    - gladiator.c
+    - libc.so.6
+
+state: visible 
+version: "0.1"

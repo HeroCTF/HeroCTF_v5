@@ -1,0 +1,41 @@
+name: "The arrest"
+author: "iHuggsy"
+category: Blockchain
+description: "In the dim-lit confines of his room, a lone figure hunched over a computer screen. Known online as 'Swissy', he was one of the most notorious ransomware operators worldwide.<br>
+From his small apartment in a forgotten corner of Moscow, Swissy had wreaked havoc on the digital world, crippling entire industries with his ransomware attacks. <br>
+But tonight, his reign of terror ended abruptly. A sudden knock echoed through the room, followed by the splintering of the door as Russian FSB agents stormed in. <br>
+Swissy was arrested, but the real challenge was only beginning - tracing the syndicate behind him.<br>
+Find the address who funded the ransomware operator (0xf6c0513FA09189Bf08e1329E44A86dC85a37c176)<br><br>
+
+
+**NOTE : Relevant contracts and addresses can be found in the help section on the blockchain website at the help page**<br><br>
+
+Format : **0x..** (ETH address)
+Author : **iHuggsy**
+"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "0x54741632BE9F6E805b64c3B31f3e052e1eAe73e2",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy 
+    - OSINT
+    - Blockchain
+
+state: visible
+version: "0.1"

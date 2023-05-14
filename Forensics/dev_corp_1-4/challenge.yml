@@ -1,0 +1,47 @@
+---
+name: "dev.corp 1/4"
+author: "Worty"
+category: "Forensic"
+description: "The famous company dev.corp was hack last week.. 
+
+They don't understand because they have followed the security standards to avoid this kind of situation. You are mandated to help them understand the attack.<br><br>
+
+For this first step, you're given the logs of the webserver of the company.<br><br>
+
+Could you find :<br>
+  - The CVE used by the attacker ?<br>
+  - What is the absolute path of the most sensitive file recovered by the attacker ?<br><br>
+
+Format : **Hero{CVE-XXXX-XXXX:/etc/passwd}**<br>
+Author : **Worty**<br><br>
+
+Here is a diagram representing the company's infrastructure:
+
+<img class='img-fluid' src='https://ctf.heroctf.fr/files/1a304ea841284b40ef20c758c2c196ba/infra.png'>"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{CVE-2020-11738:/home/webuser/.ssh/id_rsa_backup}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - easy
+    - forensic
+
+files:
+    - access.log
+
+state: visible 
+version: "0.1"

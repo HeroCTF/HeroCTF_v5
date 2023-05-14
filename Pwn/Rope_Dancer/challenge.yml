@@ -1,0 +1,34 @@
+name: "Rope Dancer"
+author: "SoEasY"
+category: Pwn
+description: "A circus has just opened near you and you would love to work there as a rope dancer. Perhaps you could access their recruitment criteria to maximize your chances of being selected?
+<br><br>
+Host : **nc static-03.heroctf.fr 5002**<br>
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{1_w4nN4_b3_4_R0P3_D4nC3r_s0_b4d!!!}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - medium
+
+files:
+    - ropedancer
+
+state: visible
+version: "0.1"

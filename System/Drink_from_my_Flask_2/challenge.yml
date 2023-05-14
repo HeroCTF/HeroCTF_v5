@@ -1,0 +1,38 @@
+---
+name: Drink from my Flask#2
+author: Log_s
+category: System
+description: "Great job, you got acces to the machine ! But our dev has been working on an update. Can you leverage that to elevate your privileges ?
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**
+<br><br>
+NB: This challenge is a sequel to Drink from my Flask #1. Start the same machine and continue from there."
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{n0t_s0_Urandom_4ft3r_4ll}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - box-like
+    - hard
+    - system
+    - webs
+
+requirements:
+    - "Drink from my Flask#1"
+
+state: visible 
+version: "0.1"

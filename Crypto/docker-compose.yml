@@ -1,0 +1,22 @@
+---
+version: "3.3"
+
+services:
+
+  uniform:
+    build:
+      context: ./Uniform/
+    environment:
+      - LISTEN_PORT=9000
+    ports:
+      - "9000:9000"
+
+  futile:
+    build:
+      context: ./Futile/
+    environment:
+      - LISTEN_PORT=9001
+      - FLAG=Hero{Int3rn4l_st4t3s_c4nt_b3_nu77}
+    ports:
+      - "9001:9001"
+

@@ -1,0 +1,13 @@
+---
+version: "3.3"
+
+services:
+
+  math_trap:
+    build:
+      context: ./Math_Trap/
+    environment:
+      - LISTEN_PORT=8000
+    ports:
+      - "8000:8000"
+

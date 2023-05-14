@@ -1,0 +1,36 @@
+name: "Hero Ransom"
+author: "SoEasY"
+category: Reverse
+description: "The mission of analyzing this malware is given to you in order to recover an encrypted file.<br><br>
+
+**Do not run the malware on yout host machine.**<br><br>
+
+Format : **Hero{flag}**<br>
+Authors : **SoEasY & Log_s**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{N0t_s0_f4r_fr0m_4_g0od_crypt0_1mpl3ment4t10n...}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+
+files:
+    - hero_ransom.exe
+    - flag.txt
+
+state: visible
+version: "0.1"

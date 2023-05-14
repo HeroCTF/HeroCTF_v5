@@ -1,0 +1,32 @@
+---
+name: "OpenPirate"
+author: xanhacks
+category: OSINT
+description: "A pirate runs a website that sells counterfeit goods, it is available under the name `heroctf.pirate`. However, we can't get our hands on it, can you help us? Your goal is to find a way to access this website.<br><br>
+
+Format : **Hero{flag}**<br>
+Author : **xanhacks**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{OpenNIC_is_free!!!3586105739}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - dns 
+
+state: visible 
+version: "0.1"

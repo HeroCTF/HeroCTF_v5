@@ -1,0 +1,58 @@
+---
+name: "dev.corp 3/4"
+author: "Worty"
+category: "Forensic"
+description: "The attacker has thus completely compromised the machine allowing access to the company's website.<br><br>
+
+One thing is incomprehensible, the dev's PC seems to have been hacked because we could observe some very strange network traffic.<br><br>
+
+By analyzing the traffic, we found a weird logo.png, could you also check ?<br><br>
+
+The password for the 7z file downloaded is : hkcjrVKDDXYgtUJ1DZhmT72nTsPg0jJhSVa2ACffpzYQ0umB6A<br><br>
+
+Download link :<br>
+    - https://mega.nz/file/yQYTkSxC\\#cuu2LzLIEjhxBEI46mFwbZmvm70PcYWaMY6L-2YI2KI<br><br>
+
+sha256sums :<br>
+    - disk.vmdk : 1efc05a9d13526a3ab2dcb1eab89b877b5c16db259d40ac36467903489ca71fd<br>
+    - logo.png : 243083eefb0f7b65d49d9d4442767c502e79eff5c39d6f79cc1afb15045427e6<br><br>
+
+Could you find :<br>
+    - The path to the first malicious file<br>
+    - The md5sum of payload executed that retrieved a file from the internet<br>
+    - The url where the malicious binary was downloaded<br>
+    - The md5sum of the malicious binary<br><br>
+
+Format : **Hero{C:\\Users\\user\\veryevil.exe:fdc8cd4cff2c19e0d1022e78481ddf36:http://verymalicious/baecon.exe:fdc8cd4cff2c19e0d1022e78481ddf36}**<br>
+Author : **Worty**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{C:\\Users\\dev\\Downloads\\Win10_21H2_French_x64.iso:36624beb83830470d02ca9fd32c13a06:http://161.97.163.247:8000/favicon.ico:a43db5461cd2eddd7a4e7d9ed7eed711}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - forensic
+
+files:
+    - logo.png
+
+requirements:
+    - "dev.corp 2/4"
+    - "dev.corp 1/4"
+
+state: visible 
+version: "0.1"

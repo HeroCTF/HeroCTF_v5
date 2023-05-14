@@ -1,0 +1,1 @@
+* * * * * /bin/zsh -ci '/home/node/look_at_user.sh' && touch /tmp/passe

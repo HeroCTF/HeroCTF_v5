@@ -1,0 +1,34 @@
+name: "Blogodogo 2/2"
+author: "xanhacks"
+category: Web
+description: "Login to the administrator's account !
+<br><br>
+You can deploy an instance on : **https://deploy.heroctf.fr**<br>
+Format : **Hero{flag}**<br>
+Author : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{very_n1ce_move_into_c4che}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard 
+
+requirements:
+  - "Blogodogo 1/2"
+
+state: visible
+version: "0.1"

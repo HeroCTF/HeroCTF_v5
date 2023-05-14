@@ -1,0 +1,34 @@
+name: "Referrrrer"
+author: "xanhacks"
+category: Web
+description: "Defeated the security of the website which implements authentication based on the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) header.
+<br><br>
+URL : **http://static-01.heroctf.fr:7000**<br>
+Format : **Hero{flag}**<br>
+Author : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{ba7b97ae00a760b44cc8c761e6d4535b}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+
+files:
+    - Referrrrer.zip
+
+state: visible
+version: "0.1"

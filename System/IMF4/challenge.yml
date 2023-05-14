@@ -1,0 +1,40 @@
+---
+name: "IMF#4: Put the past behind"
+author: Log_s
+category: System
+description: "One more step to go!
+<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{4_l1ttle_h1st0ry_l3ss0n_4_u}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - system
+
+requirements:
+    - "IMF#0: Your mission, should you choose to accept it"
+    - "IMF#1: Bug Hunting"
+    - "IMF#2: A woman's weapon"
+    - "IMF#3: admin:admin"
+    
+state: visible 
+version: "0.1"

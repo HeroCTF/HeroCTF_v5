@@ -1,0 +1,45 @@
+name: "The Second Transaction and the Offshore Connection"
+author: "iHuggsy"
+category: Blockchain
+description: "The second transaction led to an offshore exchange account in Switzerland, further complicating matters.<br> 
+After weeks of negotiations, they managed to obtain the identity of the account holder, a businessman based in Shanghai. 
+They were one step closer, but still far from the truth.
+Follow the trail. Find the address who funded the the exchange's account (last step's flag)<br><br>
+
+
+**NOTE : Relevant contracts and addresses can be found in the help section on the blockchain website at the help page**<br><br>
+
+
+Format : **0x..** (ETH address)
+Author : **iHuggsy**
+"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "0x80AF38eCD0dE67B02552A558cFD144a38D544160",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard 
+    - OSINT
+    - Blockchain
+
+requirements:
+    - "The Arrest"
+    - "Tracing the First Transaction"
+
+state: visible
+version: "0.1"

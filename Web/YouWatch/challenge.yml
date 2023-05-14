@@ -1,0 +1,42 @@
+name: "YouWatch"
+author: "Worty & Mizu"
+category: Web
+description: "A new video upload platform opens its doors! It's promising and a lot of investors are part of the project!
+
+
+The admin of the platform has uploaded a presentation video which presents a lot of tips and advices to start and progress quickly on the platform.
+
+
+Unfortunately, you are not an investor...
+
+
+The admin of the platform is very trendy, and the code of the platform is open-source.
+
+
+Find a way to watch the admin's video!
+<br><br>
+Format : **HERO{flag}**<br>
+Author : **Worty & Mizu**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "HERO{N3XT_0DAY_L34K_4dM1N_V1D3O_!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+
+state: visible
+version: "0.1"

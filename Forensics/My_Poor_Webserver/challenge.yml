@@ -1,0 +1,38 @@
+---
+name: My Poor Webserver
+author: Worty
+category: Forensic
+description: "Last night, I left my webserver open during the night. When I connect to it this morning, I've found some suspicious logs, but one minute later they we're gone... what is going on with my server?<br><br>
+
+Credentials : `root:root`<br><br>
+
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{}**<br>
+Author : **Worty**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{y0u_just_f1nd_4_r00tk1t_!!}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - medium
+    - forensic
+
+files: null
+
+state: visible 
+version: "0.1"

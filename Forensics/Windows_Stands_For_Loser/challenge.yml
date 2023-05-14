@@ -1,0 +1,36 @@
+name: "Windows Stands for Loser"
+author: "Malon"
+category: Forensic 
+description: "This time, no realistic context, we just need you to find the commands that were executed and the time. (we don't talk about windows commands here :p) (time to find : UTC+2) 
+
+Links :
+- http://static-01.heroctf.fr/windowsstandforloser.7z
+- http://static-02.heroctf.fr/windowsstandforloser.7z
+- http://static-03.heroctf.fr/windowsstandforloser.7z
+- https://mega.nz/file/rIpFnSjA#eTXl6H-8owe4zgvmfMuyGrIezZmrDBA1B2uBJibfKO4
+
+sha256sum :
+- memdump.mem : b9a1407f2040e205ec1cf3d8d88861ba063c0fd8f48267bb8bda75c785f67cbe
+
+<br>Format: Hero{secret:dd/mm/YYYY-hh:mm:ss}<br>Author: Malon"
+value: 0
+type: dynamic 
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+  - {
+    type: "static",
+    content: "Hero{w5l_0n3:10/05/2023-19:59:30}",
+    data: "case_insensitive"
+  }
+
+tags:
+  - hard
+
+state: visible
+
+version: "0.2"

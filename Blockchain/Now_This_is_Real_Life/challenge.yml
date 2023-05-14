@@ -1,0 +1,33 @@
+name: "Challenge 04 : Now this is real life"
+author: "iHuggsy"
+category: Blockchain
+description: "All the Blockchain challenges descriptions and relevant informations are available on<br>
+<a>http://blockchain.heroctf.fr:22000/</a><br><br>
+
+Format : **Hero{FLAG}**
+Author : **iHuggsy**
+"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{S0_Ur_4_r3AL_hUnT3r_WP_YMI!!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard 
+    - Blockchain
+
+state: visible
+version: "0.1"

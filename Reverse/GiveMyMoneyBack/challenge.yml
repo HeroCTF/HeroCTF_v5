@@ -1,0 +1,38 @@
+name: "Give My Money Back"
+author: "xanhacks"
+category: Reverse
+description: "Joel sat at his desk, staring at the computer screen in front of her. She had just received a strange email from an unknown sender. Joel was intrigued. She hesitated for a moment, wondering if she should open the email or not. But her curiosity got the best of her, and she clicked on the message. Your goal is to help Joel find out who stole her money!
+<br><br>
+**Warning : The attached archive contains real malware, do not run it on your machine!** Archive password: infected
+<br><br>
+The flag corresponds to the email used for the exfiltration and the name of the last exfiltrated file, e.g. Hero{attacker@evil.com|passwords.txt}.
+<br><br>
+Format : **Hero{email|filename}**<br>
+Author : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{bmwqia84@mail.ru|default_wallet}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy 
+    - malware
+
+files:
+    - GiveMyMoneyBack.zip
+
+state: visible
+version: "0.1"

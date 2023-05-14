@@ -1,0 +1,37 @@
+---
+name: "IMF#1: Bug Hunting"
+author: Log_s
+category: System
+description: "Tracking bugs can be tidious, if you're not equiped with the right tools of course...
+<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{1_tr4ck_y0u_tr4ck_h3_tr4ck5}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - system
+
+requirements:
+    - "IMF#0: Your mission, should you choose to accept it"
+
+state: visible 
+version: "0.1"

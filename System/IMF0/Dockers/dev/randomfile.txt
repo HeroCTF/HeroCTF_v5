@@ -1,0 +1,17 @@
+Here is a sample of the hashes I dumped from the database, in good faith.
+
+Pay up, and I'll send you the rest. Once you have you order, we never speak again. Glad doing business with you.
+
+louis       afba3f2f6a6124ff952cdf8fa6d639ea
+samantha    b92af75ee8a69de838e1d2eefc380bfb
+joey        dfa3e5ccebaabe11bbde4b7f4de5bbd4
+karl        219f9ad3f2efb75afcae7fab39fcd1aa
+steve       f9df3a4453f27b8bfdd39ee96aca7bac
+john        3d82b3ce57d8edfe2eaba8eb8eeebb3f
+michael     84cae12ee0242ae4abb1e5fbaab40952
+george      e58eddfd7a8d670ef5187c05b16b95a1
+sarah       fdf4f0e12e7d4cd083abb61a4b7232d9
+lucas       60d2fccbc0be51dc8dcd182b0b6a806f
+sylvia      e4282d7ee69cab77bb41ec0e02598bad
+
+Hero{4_l1ttle_h1st0ry_l3ss0n_4_u}

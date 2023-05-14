@@ -1,0 +1,38 @@
+name: "Subliminal#2"
+author: "Thibz"
+category: Steganography
+description: "An image has been hidden in this video. Don't fall into madness.<br><br>
+
+Little squares size : 20x20 pixels<br><br>
+
+Format : **Hero{}**<br>
+Author : **Thibz**"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Not_So_Subliminal}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium 
+    - steganography
+    - prog
+
+files:
+    - subliminal_hide.mp4
+
+state: visible
+version: "0.1"

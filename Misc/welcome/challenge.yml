@@ -1,0 +1,31 @@
+---
+name: Welcome
+author: Log_s
+category: Misc
+description: "You're probably already too late... Half the people pre-copied the welcome flag...<br><br>
+
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 10
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{th3_l4w_1s_h4rd_bu7_1t_5_th3_l4w}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - misc
+
+state: visible 
+version: "0.1"

@@ -1,0 +1,43 @@
+---
+name: e-pu
+author: Log_s
+category: Prog
+description: "It's the same type of puzzle as before, but we are adding one dimension. The pieces are in the `puzzle.pickle` file in the following format:
+<br><br>
+```
+pieces = [(up, right, front, down, left, back, payload), (up, right, front, down, left, back, payload), ...]
+```
+<br><br>
+The flag is the concatenation of the payloads of the pieces composing the diagonal from the upper-left-front corner to the lower-right-back corner.
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{a0b5ccfaf13144c0292a584aac4c3753}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - prog
+
+requirements:
+    - "cub"
+
+files:
+    - puzzle.pickle
+
+state: visible 
+version: "0.1"

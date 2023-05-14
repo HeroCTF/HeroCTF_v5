@@ -1,0 +1,37 @@
+name: "PNG-G"
+author: "Thibz"
+category: Steganography
+description: "Don't let appearances fool you.<br><br>
+
+Good luck!<br><br>
+
+Format : **Hero{}**<br> 
+Author : **Thibz**"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Not_Just_A_PNG}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy 
+    - steganography
+
+files:
+    - pngg.png
+
+state: visible
+version: "0.1"

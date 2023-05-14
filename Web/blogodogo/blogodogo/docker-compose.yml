@@ -1,0 +1,23 @@
+---
+version: '3.3'
+
+services:
+
+  web:
+    build: .
+    ports:
+      - 5000:5000
+    environment:
+      - ADMIN_USERNAME=admin
+      - ADMIN_PASSWORD=c933d397ca70f73c5ced02fad3fb7ab5
+      - HOST=http://localhost:5000
+      - REFERRAL_CODE=83d99a0ac225079db31b44a2e58b19f0
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - 6379:6379

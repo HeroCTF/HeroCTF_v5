@@ -1,0 +1,34 @@
+---
+name: Uniform
+author: yarienkiva
+category: Crypto
+description: "A Mersenne Twister with a twist<br><br>
+Host : **nc static-01.heroctf.fr 9000**<br>
+Format : **Hero{flag}**<br>
+Author : **yarienkiva**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{R4nd0m_gu3ssing_is_h4rd_or_is_it_h4rdly_r4nd0m_?}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - crypto
+
+files:
+    - chall.zip
+
+state: visible
+version: "0.1"

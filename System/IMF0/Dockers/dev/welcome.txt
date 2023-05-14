@@ -1,0 +1,23 @@
+Hi Bob!
+
+Welcome to our firm. I'm Dave, the tech lead here. We are going to be working together on our app.
+
+Unfortunately, I will be on leave when you arrive. So take the first few days to get familiar with our infrastructure, and tools.
+
+We are using YouTrack as our main issue tracker. The app runs on this machine (port 8080). We are both going to use the "dev" account at first, but I will create a separate account for you later. There is also an admin account, but that's for our boss. The credentials are: "dev:aff6d5527753386eaf09".
+
+The development server with the codebase is offline for a few days due to a hardware failure on our hosting provider's side, but don't worry about that for now.
+
+We also have a backup server, that is supposed to backup the main app's code (but it doesn't at the time) and also the YouTrack configuration and data.
+
+Only I have an account to access it, but you won't need it. If you really have to see if everything is running fine, I made a little utility that run's on a web server.
+
+The command to check the logs is:
+curl backup
+
+The first backups might be messed up a bit, a lot bigger than the rest, they occured while I was setting up YouTrack with it's administration account.
+
+Hope you find everything to you liking, and welcome again!
+
+Dave
+

@@ -1,0 +1,32 @@
+---
+name: Annoucement
+author: Log_s
+category: Steganography
+description: "A member of the staff is trying to send a message to an accomplice. He used a communication channel that every HeroCTF staff member has access to. Therefore, he had to hide it in plain sight. Can you find it?
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50 
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{b1n4ry_s3cr3t}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - steganography
+    - osint
+
+state: visible 
+version: "0.1"

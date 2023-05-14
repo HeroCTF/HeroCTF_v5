@@ -1,0 +1,33 @@
+name: "Challenge 02 : Dive into real life stuff"
+author: "iHuggsy"
+category: Blockchain
+description: "All the Blockchain challenges descriptions and relevant informations are available on<br>
+<a>http://blockchain.heroctf.fr:22000/</a><br><br>
+
+Format : **Hero{FLAG}**
+Author : **iHuggsy**
+"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Th1s_1_w4s_3z_bro}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium 
+    - Blockchain
+
+state: visible
+version: "0.1"

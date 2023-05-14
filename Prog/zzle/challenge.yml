@@ -1,0 +1,50 @@
+---
+name: zzle
+author: Log_s
+category: Prog
+description: "It's the same type of puzzle as before, but much larger. The pieces are in the `puzzle.pickle` file in the following format:
+<br><br>
+```
+pieces = [(up, right, front, down, left, back, payload), (up, right, front, down, left, back, payload), ...]
+```
+<br><br>
+The small difference with the previous puzzle is that the flag is only composed of every third piece's payload on the diagonal. For example, if the concatenated payloads of the diagonal form the string `'a0b1c2d3e4f5'`, then the flag is `Hero{a1d4}`
+<br><br>
+The input file being quite large, I would advise to test your optimisations on the previous puzzle file.
+<br><br>
+The file is available here : https://mega.nz/file/6Fo1iSSC#ZNiCrbrleGI_3sWyUaLVM3fVWHDgP49vxkDvbM3WfYA (password: `SEEzPfP3ssb$d9QC`)<br>
+And here : https://drive.google.com/file/d/1v2vsAf8PbcjySHRqRJV6r24D5tv9XPDt/view?usp=sharing (same password)<br>
+```
+$ sha256sum puzzle.zip            
+60b60633fe7e88bedcc98af1a5fb28ecef795b894425d2ae65f45939b796bf22  puzzle.zip
+```
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{26c8b1c64aa07afa6ea4bf653bdaef6a7d71f6199a0a812b995a9e613e542ad1}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - prog
+
+requirements:
+    - "cub"
+    - "e-pu"
+
+state: visible 
+version: "0.1"
