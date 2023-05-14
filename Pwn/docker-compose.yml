@@ -1,0 +1,66 @@
+version: "3.3"
+
+services:
+
+  appointment_book:
+    build:
+      context: ./Appointment_Book/
+    read_only: true
+    environment:
+      - LISTEN_PORT=5000
+    ports:
+      - "5000:5000"
+    networks:
+      appointment_book_network:
+
+  impossible_v2:
+    build:
+      context: ./Impossible_v2/
+    read_only: true
+    environment:
+      - LISTEN_PORT=5001
+    ports:
+      - "5001:5001"
+    networks:
+      impossible_v2_network:
+
+  rope_dancer:
+    build:
+      context: ./Rope_Dancer/
+    read_only: true
+    environment:
+      - LISTEN_PORT=5002
+    ports:
+      - "5002:5002"
+    networks:
+      rope_dancer_network:
+
+  unknown:
+    build:
+      context: ./Unknown/
+    read_only: true
+    environment:
+      - LISTEN_PORT=5003
+    ports:
+      - "5003:5003"
+    networks:
+      unknown_network:
+
+  gladiator:
+    build:
+      context: ./Gladiator/
+    read_only: true
+    environment:
+      - LISTEN_PORT=5004
+    ports:
+      - "5004:5004"
+    networks:
+      gladiator_network:
+
+networks:
+  appointment_book_network:
+  impossible_v2_network:
+  rope_dancer_network:
+  unknown_network:
+  gladiator_network:
+

@@ -1,0 +1,21 @@
+---
+version: "3.3"
+
+services:
+
+  self_control:
+    build:
+      context: ./sELF_control_v3/
+    environment:
+      - LISTEN_PORT=6000
+    ports:
+      - "6000:6000"
+
+  wourtyx:
+    build:
+      context: ./Wourtyx_RPG/
+    environment:
+      - LISTEN_PORT=3000
+    ports:
+      - "3000:3000"
+

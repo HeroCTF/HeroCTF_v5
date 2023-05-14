@@ -1,0 +1,12 @@
+---
+version: "2.2"
+
+services:
+
+  bestschool:
+    build: src/
+    restart: always
+    ports:
+      - "3000:3000"
+    cpus: 0.4
+    mem_limit: 640m

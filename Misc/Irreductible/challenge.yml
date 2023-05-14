@@ -1,0 +1,35 @@
+---
+name: Irreductible
+author: yarienkiva
+category: Misc
+description: "A Python deserialization challenge ? Easy ! I'll just copy-paste a generic payload and ... oh, *oh no*.<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **yarienkiva**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Ins3cur3_d3s3ri4liz4tion_tickl3s_my_pickl3}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - misc
+
+files:
+    - chall.zip
+
+state: visible 
+version: "0.1"

@@ -1,0 +1,34 @@
+name: "sELF control v3"
+author: "SoEasY"
+category: Reverse
+description: "There are multiple problems in this ELF file... Patch it before execution to get the flag!
+<br><br>
+Host : **nc static-02.heroctf.fr 6000**<br>
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{1_H0P3_y0u_l34rn3d_4b0ut_th3_ELF_f0rm4t_1n_th15_ch4ll3ng3_t0d4y!!!}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - medium
+
+files:
+    - get_flag
+
+state: visible
+version: "0.1"

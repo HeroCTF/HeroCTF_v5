@@ -1,0 +1,34 @@
+---
+name: Math Trap
+author: Log_s
+category: Prog
+description: "In this challenge, you have to make a few simple calculations for me, but pretty quickely. Maybe the pwntools python library will help you ?
+<br><br>
+PS: control your inputs.
+<br><br>
+Host : **nc static-01.heroctf.fr 8000**<br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{E4sy_ch4ll3ng3_bu7_tr4pp3d}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - prog
+
+state: visible 
+version: "0.1"

@@ -1,0 +1,54 @@
+---
+name: "dev.corp 4/4"
+author: "Worty"
+category: "Forensic"
+description: "The payload came from the .iso, and now we don't know what happened on the dev's computer.<br><br>
+
+A little before the hard disk dump, we also made a memory capture, to potentially recover some evidence.<br><br>
+
+We need the key of the malware to decrypt things, but we don't have them..<br><br>
+
+The password for the 7z is : 5HF8dnXIW4uHWztCWHMBrmaVcIQLch3PlCWoEWYPhFKVugAbPJ<br><br>
+
+Download links :<br>
+    - https://mega.nz/file/CAwxFAgK#-pB5aauil1IxjPTuzf0cdnysISaHc-HTt8JY0OXYkrY<br><br>
+
+sha256sums :<br>
+    - memory.vmem : 2b02b1e97c2239b9d6cabd9aff05b5ba0e24e7bcb7bfb9d2fdce7936c5adc2fa<br><br>
+
+Could you find :<br>
+    - Path of the exfiltred files<br>
+    - AES Key of the malware<br>
+    - IV of the malware<br><br>
+
+Format : **Hero{C:\\file1:C:\\file2:C:\\fileN:thisisthekey!!!!:thisistheiv!!!!!}**<br>
+Author : **Worty**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{C:\\Users\\dev\\Downloads\\personal.docx:C:\\Users\\dev\\Downloads\\passwords.docx:youwontseeitcome:wellmakeyoufall_}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+    - forensic
+
+requirements:
+    - "dev.corp 3/4"
+    - "dev.corp 2/4"
+    - "dev.corp 1/4"
+
+state: visible 
+version: "0.1"

@@ -1,0 +1,34 @@
+name: "Wourtyx RPG"
+author: "iHuggsy"
+category: Reverse
+description: "Reverse, understand, git gud, win.
+<br><br>
+Host : **nc static-01.heroctf.fr 3000**<br>
+Format : **Hero{flag}**<br>
+Author : **iHuggsy**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{YoureSomeKindOfDarkSoulsPlayerOrYouHighOnSmthWtf?}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - hard 
+
+files:
+    - out 
+
+state: visible
+version: "0.1"

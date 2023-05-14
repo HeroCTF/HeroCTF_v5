@@ -1,0 +1,34 @@
+name: "Blogodogo 1/2"
+author: "xanhacks"
+category: Web
+description: "Try to see the content of the secret note of the administator user.
+<br><br>
+You can deploy an instance on : **https://deploy.heroctf.fr**<br>
+Format : **Hero{flag}**<br>
+Author : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{pr3333vi333wwwws_5973791}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium 
+
+files:
+    - blog.zip
+
+state: visible
+version: "0.1"

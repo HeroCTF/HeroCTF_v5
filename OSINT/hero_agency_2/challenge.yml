@@ -1,0 +1,39 @@
+---
+name: Hero Agency 2/4
+author: cresus
+category: OSINT
+description: "*As an special agent of the Hero Agency, you have received an urgent message through a brain implant device. Your mission is to use OSINT techniques to gather information and brilliantly solve the mission. The clock is ticking, so use your skills wisely and act quickly to prevent any harm from coming to innocent lives. Good luck!*<br><br>
+
+On which street the agent was kidnapped?<br><br>
+
+PS: Accents are to be discarded, spaces are to be replaced with underscores and only the street name should be kept (eg. 'Rue de la Générale Rivôli' -> 'generale_rivoli'). Casing does not matter.<br><br>
+
+Format : **Hero{street}**<br>
+Author : **cresus**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{coutume}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - osint
+
+requirements:
+    - "Hero Agency 1/4"
+
+state: visible 
+version: "0.1"

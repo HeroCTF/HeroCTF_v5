@@ -1,0 +1,33 @@
+name: "Challenge 01 : Classic one tbh"
+author: "iHuggsy"
+category: Blockchain
+description: "All the Blockchain challenges descriptions and relevant informations are available on<br>
+<a>http://blockchain.heroctf.fr:22000/</a><br><br>
+
+Format : **Hero{FLAG}**
+Author : **iHuggsy**
+"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{S4m3_aS_USU4L_bUT_S3eN_IRL??!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy 
+    - Blockchain
+
+state: visible
+version: "0.1"

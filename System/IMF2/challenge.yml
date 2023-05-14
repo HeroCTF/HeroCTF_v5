@@ -1,0 +1,40 @@
+---
+name: "IMF#2: A woman's weapon"
+author: Log_s
+category: System
+description: "Historically considered as a woman's weapon, pretty sure that's not true and anyone can exploit it.
+<br><br>
+**PS**: *When you understand what to exploit, try it locally first, as a failed attempt would very likely make any further attempts impossible.*
+<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{n0t_0nly_hum4ns_c4n_b3_po1s3n3d}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - system
+
+requirements:
+    - "IMF#0: Your mission, should you choose to accept it"
+    - "IMF#1: Bug Hunting"
+    
+state: visible 
+version: "0.1"

@@ -1,0 +1,192 @@
+0.	[0x64]LOAD_CONST
+	 [0x1]Hero{4
+
+2.	[0x7d]STORE_FAST
+	 [0x1]Saving in p1
+
+4.	[0x64]LOAD_CONST
+	 [0x2]33e8e40da5bec09
+
+6.	[0x64]LOAD_CONST
+	 [0x0]None
+
+8.	[0x64]LOAD_CONST
+	 [0x0]None
+
+10.	[0x64]LOAD_CONST
+	 [0x3]-1
+
+12.	[0x85]BUILD_SLICE
+	 [0x3]None
+
+14.	[0x19]BINARY_SUBSCR
+
+15.	[0x0]<0>
+
+16.	[0x7d]STORE_FAST
+	 [0x2]Saving in p2
+
+18.	[0x64]LOAD_CONST
+	 [0x4]
+
+20.	[0x7d]STORE_FAST
+	 [0x3]Saving in p3
+
+22.	[0x64]LOAD_CONST
+	 [0x5]12
+
+24.	[0x7d]STORE_FAST
+	 [0x4]Saving in x
+
+26.	[0x64]LOAD_CONST
+	 [0x6]b'?;9ms!w$ -.. ++'
+
+28.	[0x44]GET_ITER
+
+29.	[0x0]<0>
+
+30.	[0x5d]FOR_ITER
+	 [0xe]None
+
+32.	[0x7d]STORE_FAST
+	 [0x5]Saving in c
+
+34.	[0x7c]LOAD_FAST
+	 [0x3]Loading from p3
+
+36.	[0x74]LOAD_GLOBAL
+	 [0x0]chr
+
+38.	[0x7c]LOAD_FAST
+	 [0x5]Loading from c
+
+40.	[0x7c]LOAD_FAST
+	 [0x4]Loading from x
+
+42.	[0x41]BINARY_XOR
+
+43.	[0x0]<0>
+
+44.	[0x83]CALL_FUNCTION
+	 [0x1]None
+
+46.	[0x37]INPLACE_ADD
+
+47.	[0x0]<0>
+
+48.	[0x7d]STORE_FAST
+	 [0x3]Saving in p3
+
+50.	[0x7c]LOAD_FAST
+	 [0x4]Loading from x
+
+52.	[0x64]LOAD_CONST
+	 [0x7]1
+
+54.	[0x37]INPLACE_ADD
+
+55.	[0x0]<0>
+
+56.	[0x7d]STORE_FAST
+	 [0x4]Saving in x
+
+58.	[0x71]JUMP_ABSOLUTE
+	 [0xf]None
+
+60.	[0x7c]LOAD_FAST
+	 [0x0]Loading from key
+
+62.	[0x64]LOAD_CONST
+	 [0x7]1
+
+64.	[0x19]BINARY_SUBSCR
+
+65.	[0x0]<0>
+
+66.	[0x7d]STORE_FAST
+	 [0x0]Saving in key
+
+68.	[0x74]LOAD_GLOBAL
+	 [0x0]chr
+
+70.	[0x74]LOAD_GLOBAL
+	 [0x1]ord
+
+72.	[0x7c]LOAD_FAST
+	 [0x0]Loading from key
+
+74.	[0x83]CALL_FUNCTION
+	 [0x1]None
+
+76.	[0x74]LOAD_GLOBAL
+	 [0x1]ord
+
+78.	[0x7c]LOAD_FAST
+	 [0x0]Loading from key
+
+80.	[0x83]CALL_FUNCTION
+	 [0x1]None
+
+82.	[0x1a]BINARY_FLOOR_DIVIDE
+
+83.	[0x0]<0>
+
+84.	[0x64]LOAD_CONST
+	 [0x8]48
+
+86.	[0x14]BINARY_MULTIPLY
+
+87.	[0x0]<0>
+
+88.	[0x83]CALL_FUNCTION
+	 [0x1]None
+
+90.	[0x7d]STORE_FAST
+	 [0x6]Saving in p4
+
+92.	[0x64]LOAD_CONST
+	 [0x9]}
+
+94.	[0x7d]STORE_FAST
+	 [0x7]Saving in p5
+
+96.	[0x7c]LOAD_FAST
+	 [0x1]Loading from p1
+
+98.	[0x7c]LOAD_FAST
+	 [0x2]Loading from p2
+
+100.	[0x17]BINARY_ADD
+
+101.	[0x0]<0>
+
+102.	[0x7c]LOAD_FAST
+	 [0x3]Loading from p3
+
+104.	[0x17]BINARY_ADD
+
+105.	[0x0]<0>
+
+106.	[0x7c]LOAD_FAST
+	 [0x6]Loading from p4
+
+108.	[0x17]BINARY_ADD
+
+109.	[0x0]<0>
+
+110.	[0x7c]LOAD_FAST
+	 [0x7]Loading from p5
+
+112.	[0x17]BINARY_ADD
+
+113.	[0x0]<0>
+
+114.	[0x7d]STORE_FAST
+	 [0x8]Saving in flag
+
+116.	[0x64]LOAD_CONST
+	 [0xa]Hero{F4ke_Fl4g}
+
+118.	[0x53]RETURN_VALUE
+
+119.	[0x0]<0>

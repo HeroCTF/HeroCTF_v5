@@ -1,0 +1,33 @@
+name: "Optimus Prime"
+author: "SoEasY"
+category: Reverse
+description: "You must protect the planet. If the Decepticons find the password before us, then our people are truly finished.
+<br><br>
+Format : **Hero{password}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{10726a4ef2ad8bef8e022002c695dc27}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+
+files:
+    - optimus_prime
+
+state: visible
+version: "0.1"

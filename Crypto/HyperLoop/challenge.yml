@@ -1,0 +1,35 @@
+name: "Hyper Loop"
+author: "xanhacks"
+category: Crypto
+description: "The author is aware that XOR alone is not sufficiently secure, but they have implemented a solution to address this issue. Use the provided Python script to rec
+over the original flag.<br><br>
+
+Format : **Hero{flag}**<br>
+Author : **xanhacks**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{hyp3r_l00p!1}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy 
+    - xor
+
+files:
+    - hyper_loop.py 
+
+state: visible
+version: "0.1"

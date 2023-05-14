@@ -1,0 +1,34 @@
+name: "Impossible v2"
+author: "SoEasY"
+category: Pwn
+description: "Your colleague trolls you again by giving you an impossible challenge, betting $200 that, this time, you won't succeed.
+Show him that this impossible challenge is in fact easy!<br><br>
+Host : **nc static-03.heroctf.fr 5001**<br>
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{AES_ECB_1S_S0_345Y_WH3N_Y0U_C0NTR0L_TH3_K3Y!!!}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - easy
+
+files:
+    - impossible_v2
+
+state: visible
+version: "0.1"

@@ -1,0 +1,37 @@
+---
+name: "Hero Agency 1/4"
+author: cresus
+category: OSINT
+description: "*As an special agent of the Hero Agency, you have received an urgent message through a brain implant device. Your mission is to use OSINT techniques to gather information and brilliantly solve the mission. The clock is ticking, so use your skills wisely and act quickly to prevent any harm from coming to innocent lives. Good luck!*<br><br>
+
+What is the identity of the missing agent?<br><br>
+
+Format : **Hero{pseudo}**<br>
+Author : **cresus**"
+
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{supersaragora}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - osint
+
+files:
+    - emergency_broadcast.mp3
+
+state: visible 
+version: "0.1"

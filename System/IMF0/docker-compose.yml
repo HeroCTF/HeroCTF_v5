@@ -1,0 +1,16 @@
+services:
+  dev_machine:
+    build:
+        context: Dockers/dev
+        dockerfile: Dockerfile
+    ports:
+        - "2222:22"
+    hostname: dev
+
+  backup_machine:
+    build:
+        context: Dockers/backup
+        dockerfile: Dockerfile
+    ports:
+        - "2223:22"
+    hostname: backup

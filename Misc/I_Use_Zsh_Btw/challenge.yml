@@ -1,0 +1,34 @@
+---
+name: I_Use_zsh_BTW
+author: Worty
+category: Misc
+description: "A new platform to temporaly store your file has open !<br><br>
+
+However, it seems that the administrator often goes into the anonymous folders (from an SSH access) of people to see what they upload, you have to stop that! Take control of the server.<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Worty**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{rc3_w1th_3v1l_fsm0n1t0r_!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - misc
+
+state: visible 
+version: "0.1"

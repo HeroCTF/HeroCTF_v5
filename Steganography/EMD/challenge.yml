@@ -1,0 +1,44 @@
+name: "EMD"
+author: "Thibz"
+category: Steganography
+description: "Our agents discovered that a group of Breton extremists were communicating with each other through postcards representing the landscape of the region. We have managed to intercept an image and we are convinced that it contains information that is crucial to dismantling this group.
+Some information to help you: <br>
+- the size of the pixel groups is 2<br>
+- The size of the hidden message is 841 characters<br>
+- The image must be divided into groups containing 2 pixels that follow each other on the x-axis.<br>
+- No secret key has been used during the encryption, so there is no random permutation of the pixels<br><br>
+Good luck!<br><br>
+
+This challenge uses the most basic Exploiting Modification Direction technique described by Xinpeng Zhang and Shuozhong Wang in their paper Efﬁcient Steganographic Embedding by Exploiting Modiﬁcation Direction.<br><br>
+
+Format : **Hero[]** WARNING : For this challenge, square brackets [] are used and not braces {}.<br> 
+Author : **Thibz**"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero[V4NN3S_C17Y_F7W]",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard 
+    - steganography
+    - prog
+
+files:
+    - vannesHidden.png
+
+state: visible
+version: "0.1"

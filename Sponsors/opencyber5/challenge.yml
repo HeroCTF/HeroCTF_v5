@@ -1,0 +1,26 @@
+name: "Open your eyes 5/5"
+author: "OPENCYBER"
+category: Sponsors
+description: "Sometimes there is more than meets the eye. Be clever and collect the 5 flags. Some are easy, some are hard.<p>
+Access the challenge here : https://heroctf.joinopencyber.tech/ <br>
+Format : Hero{0...}<br>Author : OPENCYBER"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{0h_No_My_s3cR3t_goT_ST0LEN}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard
+
+state: visible
+version: "0.1"

@@ -1,0 +1,33 @@
+name: "Appointment Book"
+author: "SoEasY"
+category: Pwn
+description: "Exploit this application to get the flag!<br><br>
+Host : **nc static-03.heroctf.fr 5000**<br>
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Unch3ck3d_n3g4t1v3_1nd3x_1nt0_G0T_0v3wr1t3_g03s_brrrrrr}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - easy
+
+files:
+    - appointment_book
+
+state: visible
+version: "0.1"

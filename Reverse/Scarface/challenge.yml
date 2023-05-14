@@ -1,0 +1,33 @@
+name: "Scarface"
+author: "SoEasY"
+category: Reverse
+description: "Maybe you can find my password... But you can't push it to the limit like me.
+<br><br>
+Format : **Hero{password}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{S4y_H3lL0_t0_mY_l1ttl3_FR13ND!!}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - easy
+
+files:
+    - scarface
+
+state: visible
+version: "0.1"

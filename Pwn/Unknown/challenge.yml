@@ -1,0 +1,34 @@
+name: "Unknown"
+author: "SoEasY"
+category: Pwn
+description: "?????????????
+<br><br>
+Host : **nc static-03.heroctf.fr 5003**<br>
+Format : **Hero{flag}**<br>
+Author : **SoEasY**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Br0_wh0_3v3n_th0ught_0f_th3s3_SSE_AVX_1nstruct10ns}",
+        data: "case_sensitive",
+    }
+
+tags:
+    - hard
+
+files:
+    - unknown
+
+state: visible
+version: "0.1"

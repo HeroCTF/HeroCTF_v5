@@ -1,0 +1,33 @@
+---
+name: Pyjail
+author: Log_s
+category: Misc
+description: "Welcome in jail. If it's not your first time, you should be out quickly. If it is your first rodeo, people have escape before you... I'm sure you'll be fine.
+<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{nooooo_y0u_3sc4p3d!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - misc
+
+state: visible 
+version: "0.1"

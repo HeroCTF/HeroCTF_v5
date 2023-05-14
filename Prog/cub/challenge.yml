@@ -1,0 +1,46 @@
+---
+name: cub
+author: Log_s
+category: Prog
+description: "This is a very simple puzzle. The pieces are in the `puzzle.pickle` file in the following format:<br><br>
+```python
+pieces = [(up, right, down, left, payload), (up, right, down, left, payload), ...]
+```
+<br><br>
+`up`, `right`, `down`, `left` are the IDs of the piece edges. You should put together corresponding edges. There are no unused pieces.
+<br><br>
+They are all integers.
+<br><br>
+The `payload` field is a python string, composed of a single character contained in the following charset `'0123456789abcdef'`.
+<br><br>
+The flag is the concatenation of the payloads of the pieces composing the diagonal from the upper-left corner to the lower-right corner.
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{d98e58021ab8454de195cc2eeb5ed3865dfec6bae3bebf3e0ec2f8b32621c1aa}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+    - prog
+
+files:
+    - puzzle.pickle
+    - images/recap.png
+
+state: visible 
+version: "0.1"

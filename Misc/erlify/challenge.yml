@@ -1,0 +1,35 @@
+---
+name: Erlify
+author: Worty
+category: Misc
+description: "I've made a simple API to compile erlang program, but I don't run it so.. I'm safe ?<br><br>
+
+If you found a vulnerability, try to leak /flag.txt (don't forget to add Hero{} around the flag you've found)
+<br><br>
+
+URL : **http://static-02.heroctf.fr:4000**<br>
+Format : **Hero{flag}**<br>
+Author : **Worty**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{Erl4ngC4nL34kAtC0mp1l3T1m3}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium
+    - misc
+
+state: visible 
+version: "0.1"

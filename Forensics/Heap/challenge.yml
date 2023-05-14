@@ -1,0 +1,37 @@
+---
+name: Heap
+author: Thib
+category: Forensic
+description: "We caught a hacker red-handed while he was encrypting data. Unfortunately we were too late to see what he was trying to hide. We did however manage to get a dump of the java heap.<br><br>
+
+Try to find the information he wants to hide from us.<br><br>
+
+Format : **Hero{}**<br>
+Author : **Thib**"
+
+value: null
+type: dynamic
+extra:
+  initial: 500
+  decay: 100
+  minimum: 50
+
+image: null
+host: null
+
+flags:
+  - {
+    type: "static",
+    content: "Hero{D1G_1NT0_J4V4_H34P}",
+    data: "case_sensitive",
+  }
+
+tags:
+  - medium
+  - forensic
+
+files:
+  - heap.hprof
+
+state: visible 
+version: "0.1"

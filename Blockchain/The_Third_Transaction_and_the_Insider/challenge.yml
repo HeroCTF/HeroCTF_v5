@@ -1,0 +1,47 @@
+name: "The Third Transaction and the Insider"
+author: "iHuggsy"
+category: Blockchain
+description: "The third transaction was the most challenging yet. We have no clue who this belongs to ... <br>
+You have to keep following the trail. The end is near ! <br>
+
+The address that funded the unknown wallet address should lead to a CEX wallet transfer.<br>
+Find the hash of the transaction from the CEX to the main funding address<br><br>
+
+
+**NOTE : Relevant contracts and addresses can be found in the help section on the blockchain website at the help page**<br><br>
+
+
+Format : **0x..** (sha3 hash)
+Author : **iHuggsy**
+"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "0x10110b38d8552bf2d47c958a201da2aa4d184f87cf8a6ef3f5dc57ef9c18162a",
+        data: "case_insensitive",
+    }
+
+tags:
+    - hard 
+    - OSINT
+    - Blockchain
+
+requirements:
+    - "The Arrest"
+    - "Tracing the First Transaction"
+    - "The Second Transaction and the Offshore Connection"
+
+state: visible
+version: "0.1"

@@ -1,0 +1,32 @@
+name: "Best Schools"
+author: "Worty"
+category: Web
+description: "An anonymous company has decided to publish a ranking of the best schools, and it is based on the number of clicks on a button! Make sure you get the 'Flag CyberSecurity School' in first place and you'll get your reward!
+<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Worty**"
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{gr4phql_b4tch1ng_t0_byp4ss_r4t3_l1m1t_!!}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy
+
+state: visible
+version: "0.1"

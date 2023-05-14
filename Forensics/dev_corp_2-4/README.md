@@ -1,0 +1,43 @@
+# dev.corp 2/4
+
+### Category
+
+Forensic
+
+### Description
+
+Apparently updates are not done at dev.corp ...<br><br>
+
+dev.corp also expose a gitlab on internet for developers, and this might be the worst idea they had..<br><br>
+
+Download links :<br>
+    - https://mega.nz/file/KU5ASKxT#zojfii1C-mcc-qu2nfeyOzxXrI2Z-IuwRIBT71Y_qdo<br>
+    - https://mega.nz/file/ndQzUS5C#UxAbrID6YIzjfye1dctx7bOxmxNDuR0zZqbgpASO_Jc
+
+sha256sums :<br>
+    - git_content.zip: 0e1da815d14bdf05a0906e12a5e8cc0f442a52bf3117a1df7c06fe7f09e0c2f4<br>
+    - gitlab_logs.zip: 2e5c1bbda9a3121cbe80e5c42e9b66e3a6d60874d6e9ad6e4c29018bf4db7f42<br>
+    - web_srv_dd_part.zip : beff6c7300119f6ca88044f3945e2d4c4c2121c2af3f9652aec6aa10b8a040c7
+
+Could you find :<br>
+    - The malicious commit id<br>
+    - The ip address of this malicous commit<br>
+    - The name of the file that was used to privesc<br><br>
+
+Format : **Hero{b02a4678405a52b85972d75020b57cb4f83a7e8d:127.0.0.1:/tmp/pkexec}**<br>
+Author : **Worty**
+
+### Files
+
+![Gitlab Logs](gitlab_logs.zip)
+- Files from mega or google drive
+
+### Write up
+
+
+todo
+
+
+### Flag
+
+```Hero{79abbe885602805e31bd297873393af74b2a3bd9:158.49.62.15:/var/www/web_srv_site/.git/hooks/post-merge}```

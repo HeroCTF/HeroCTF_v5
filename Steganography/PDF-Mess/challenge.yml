@@ -1,0 +1,38 @@
+name: "PDF-Mess"
+author: "Thibz"
+category: Steganography
+description: "This file seems to be a simple copy and paste from wikipedia. It would be necessary to dig a little deeper...<br><br>
+
+Good luck!<br><br>
+
+Format : **Hero{}**<br> 
+Author : **Thibz**"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{M4L1C10U5_C0D3_1N_PDF}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - easy 
+    - steganography
+    - pdf
+
+files:
+    - strange.pdf
+
+state: visible
+version: "0.1"

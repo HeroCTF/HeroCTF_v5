@@ -1,0 +1,36 @@
+---
+name: Drink from my Flask#1
+author: Log_s
+category: Web
+description: "A friend of yours got into an argument with a flask developer. He tried handling it himself, but he somehow got his nose broken in the process... Can you put your hacker skills to good use and help him out?
+<br><br>
+You should probably be able to access the server hosting your target's last project, shouldn't you ? I heard is making a lost of programming mistakes...
+<br><br>
+> Deploy on [deploy.heroctf.fr](https://deploy.heroctf.fr/)
+<br><br>
+Format : **Hero{flag}**<br>
+Author : **Log_s**"
+value: null
+type: dynamic
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "Hero{sst1_fl4v0ur3d_c0Ok1e}",
+        data: "case_insensitive",
+    }
+
+tags:
+    - box-like
+    - medium
+    - web
+
+state: visible 
+version: "0.1"

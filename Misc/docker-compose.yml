@@ -1,0 +1,11 @@
+---
+version: "3.3"
+
+services:
+
+  erlify:
+    build:
+      context: ./erlify/
+    ports:
+      - "4000:80"
+

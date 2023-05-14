@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Erlang Checker !</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #0082c9;">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <p class="lead" style="color: white;">Welcome to erlang checker ! Here you can provide your code, and i'll try to compile it.</p>
+                <p class="lead" style="color: red;">Note : The code isn't executed at all ! It's just a free compiler !</p>
+                <p style="color: white;">Enter your code below, then click submit :</p>
+            </div>
+            <div class="col-12 text-center justify-content-center d-flex">
+                    <textarea style="color: white;" id="code" name="code" rows="20" cols="150"></textarea>
+            </div> 
+            <div class="col-12 text-center">
+                    <input type="submit" id="submit" class="btn btn-success text-center" onclick="send()" value="Submit my code"/>
+            </div>
+            <div class="col-12 text-center" id="result">
+            </div>
+        </div>
+    </div>
+    <script>
+        //handle css in js because css suck
+        $("#code").css("background-color","#2b2a33")
+        $("#code").css("border-color","#2b2a33")
+        
+        function send()
+        {
+            var code = btoa($("#code").val())
+            $.ajax({
+                type: "POST",
+                url: "/api.php",
+                data: {"code":code},
+                success: function(data, textStatus, xhr)
+                {
+                    $("#result").empty()
+                    $("#res_api").remove()
+                    var html;
+                    html = "<br><p style='color: black;'>Result:</p><textarea id='res_api' style='color: white;' rows='10' cols='100'></textarea>"
+                    $("#result").append(html)
+                    $("#res_api").css("background-color","#2b2a33")
+                    $("#res_api").css("border-color","#2b2a33")
+                    document.getElementById("res_api").innerHTML = data;
+                },
+                error: function(data)
+                {
+                    alert(data)
+                }
+            })
+        }
+    </script>
+</body>
+</html>

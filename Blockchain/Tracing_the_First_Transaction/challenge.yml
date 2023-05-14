@@ -1,0 +1,44 @@
+name: "Tracing the First Transaction"
+author: "iHuggsy"
+category: Blockchain
+description: "The first transaction was the most straightforward, traced back to a bitcoin wallet belonging to a shell company. <br>
+The company was a front, but it was a start. They discovered the shell company was registered in the Cayman Islands - <br>
+a notorious tax haven, making it a perfect place to launder illicit fund <br>
+Follow the trail. Find the address who funded the the shell company (last step's flag)<br><br>
+
+
+**NOTE : Relevant contracts and addresses can be found in the help section on the blockchain website at the help page**<br><br>
+
+
+Format : **0x..** (ETH address)
+Author : **iHuggsy**
+"
+
+value: 0
+type: dynamic
+
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+image: null
+host: null
+
+flags:
+    - {
+        type: "static",
+        content: "0x26F8A2D63B06D84121b35990ce8b7FEbac4Fe353",
+        data: "case_insensitive",
+    }
+
+tags:
+    - medium 
+    - OSINT
+    - Blockchain
+
+requirements:
+    - The arrest
+    
+state: visible
+version: "0.1"
