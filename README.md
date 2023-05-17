@@ -16,7 +16,7 @@ Github : https://github.com/HeroCTF
 
 # Challenges
 
-- **Total :** UNDEFINED challenges.
+- **Total :** 77 challenges.
 - **Difficulty** (3 levels) : Easy, Medium, Hard
 
 | Name                                                                    | Category      | Author          | Difficulty  | Done |
