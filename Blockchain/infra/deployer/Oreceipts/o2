@@ -1,0 +1,61 @@
+❯ npx hardhat run scripts/osint_2.js --network melchain
+[+] Deploying contracts !
+[+] WMEL found @ 0xd1a68d5bFa15CB375552492993fC38396eebC1b1
+[+] KwikEFactory found @ 0x7d099C73F8ee9c84e0B5805a4E8e685D7a0A2376
+[+] KwikERouter found @ 0x3038ae6af5726f685B551266d8cCd704e7e0c3CA
+[+] ERC20 found @ 0x4e1774789f148a861356ae70571e21fd45bbc3Ac
+Deploy start balances : 
+
+O2 target :
+WMEL :  0.0 
+MEL :  899.461228747332866256
+O1 target : 
+WMEL :  0.0 
+MEL :  0.0
+Sending 44.973061437366643312 total  BigNumber { value: "899461228747332866256" }
+Sending 44.973061437366643312 total  BigNumber { value: "899461228747332866256" }
+Sending 44.973061437366643312 total  BigNumber { value: "899461228747332866256" }
+Sending 44.973061437366643312 total  BigNumber { value: "899461228747332866256" }
+Branching l1
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Branching l1
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Branching l1
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Branching l1
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+Sending 2.248653071868332165 total  BigNumber { value: "44973061437366643312" }
+L1 OK
+pup2 sending  1.416651435277049263
+pup2 sending  1.011893882340749474
+pup2 sending  1.079353474496799439
+pup2 sending  1.034380413059432795
+pup2 sending  1.37167837383968262
+pup2 sending  0.719568982997866292
+pup2 sending  1.169299597371532725
+pup2 sending  0.944434290184699509
+pup2 sending  0.876974698028649544
+pup2 sending  1.664003273182565802
+pup2 sending  1.37167837383968262
+pup2 sending  1.753949396057299088
+pup2 sending  1.37167837383968262
+Deploy start balances : 
+
+O2 target :
+WMEL :  0.0 
+MEL :  719.568982997862765008
+O1 target : 
+WMEL :  0.0 
+MEL :  15.785544564515691791
+Challenge setup complete
