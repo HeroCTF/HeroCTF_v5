@@ -1,0 +1,24 @@
+❯ npx hardhat run scripts/osint_1.js --network melchain
+[+] Deploying contracts !
+[+] WMEL found @ 0xd1a68d5bFa15CB375552492993fC38396eebC1b1
+[+] KwikEFactory found @ 0x7d099C73F8ee9c84e0B5805a4E8e685D7a0A2376
+[+] KwikERouter found @ 0x3038ae6af5726f685B551266d8cCd704e7e0c3CA
+[+] ERC20 found @ 0x4e1774789f148a861356ae70571e21fd45bbc3Ac
+Address OSINT 1 :  0x54741632BE9F6E805b64c3B31f3e052e1eAe73e2
+Deploy start balances : 
+
+O1 target :
+WMEL :  0.0 
+MEL :  15.785544564515691791
+O0 target : 
+WMEL :  0.0 
+MEL :  0.0
+Bronance OK
+Deploy start balances : 
+
+O1 target :
+WMEL :  0.0 
+MEL :  7.892772282256963896
+O0 target : 
+WMEL :  0.0 
+MEL :  7.892772282257845895

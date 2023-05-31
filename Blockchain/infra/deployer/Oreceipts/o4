@@ -1,0 +1,69 @@
+npx hardhat run scripts/osint_4.js --network melchain
+[+] Deploying contracts !
+[+] WMEL found @ 0xd1a68d5bFa15CB375552492993fC38396eebC1b1
+[+] KwikEFactory found @ 0x7d099C73F8ee9c84e0B5805a4E8e685D7a0A2376
+[+] KwikERouter found @ 0x3038ae6af5726f685B551266d8cCd704e7e0c3CA
+[+] ERC20 found @ 0x4e1774789f148a861356ae70571e21fd45bbc3Ac
+Deploy start balances : 
+
+O4 target :
+WMEL :  0.0 
+MEL :  0.0
+O3 target : 
+WMEL :  0.0 
+MEL :  0.0
+Receipt  0 OK !
+Rugpulling !
+Iteration 0 signer 4  0.0 signer 3 0.0
+[ERC20] User 0x99aC88390Cd2D02Ab8587404f8d90a09425Ed101 depositing 30 % of wallet ( 11999.9996402442 ) in WMEL
+0xd1a68d5bFa15CB375552492993fC38396eebC1b1 0x615074cd854A55318eFb29BFbf7D9464c8aC58cf BigNumber { value: "5000000000000000000" } BigNumber { value: "1000000000000000000000000" } BigNumber { value: "2000000000000000000" } BigNumber { value: "1000000000000000000000000" } 0x615074cd854A55318eFb29BFbf7D9464c8aC58cf 1683804682
+SWAP 1 OK !
+Iteration 1 signer 4  10979.9996402442 signer 3 1084.850132646327529838
+[ERC20] User 0x99aC88390Cd2D02Ab8587404f8d90a09425Ed101 depositing 23 % of wallet ( 6439.998971367504 ) in WMEL
+0xd1a68d5bFa15CB375552492993fC38396eebC1b1 0xBcFAbcDC4A777979744DeE34b11Aa100Ad6F21d7 BigNumber { value: "5000000000000000000" } BigNumber { value: "1000000000000000000000000" } BigNumber { value: "2000000000000000000" } BigNumber { value: "1000000000000000000000000" } 0xBcFAbcDC4A777979744DeE34b11Aa100Ad6F21d7 1683804735
+SWAP 1 OK !
+Iteration 2 signer 4  16399.998611611704 signer 3 2093.484109626523021226
+[ERC20] User 0x99aC88390Cd2D02Ab8587404f8d90a09425Ed101 depositing 10 % of wallet ( 2155.9992953480296 ) in WMEL
+0xd1a68d5bFa15CB375552492993fC38396eebC1b1 0x27bA5AB22A8d60C1A8A11F1C6947e01252e37a2B BigNumber { value: "5000000000000000000" } BigNumber { value: "1000000000000000000000000" } BigNumber { value: "2000000000000000000" } BigNumber { value: "1000000000000000000000000" } 0x27bA5AB22A8d60C1A8A11F1C6947e01252e37a2B 1683804819
+SWAP 1 OK !
+Iteration 3 signer 4  17535.9979069597336 signer 3 3094.177200211188212739
+[ERC20] User 0x99aC88390Cd2D02Ab8587404f8d90a09425Ed101 depositing 39 % of wallet ( 7567.556121546433896 ) in WMEL
+0xd1a68d5bFa15CB375552492993fC38396eebC1b1 0x8E92be167F3BAe8E6d3cA9CFfb18637bb23428d7 BigNumber { value: "5000000000000000000" } BigNumber { value: "1000000000000000000000000" } BigNumber { value: "2000000000000000000" } BigNumber { value: "1000000000000000000000000" } 0x8E92be167F3BAe8E6d3cA9CFfb18637bb23428d7 1683804916
+SWAP 1 OK !
+Iteration 4 signer 4  24083.554028506167496 signer 3 4094.106533466592950496
+[ERC20] User 0x99aC88390Cd2D02Ab8587404f8d90a09425Ed101 depositing 11 % of wallet ( 1302.00733639106157544 ) in WMEL
+0xd1a68d5bFa15CB375552492993fC38396eebC1b1 0x8Aa99DDA2131d0BB6D8816C1901118889B4619e9 BigNumber { value: "5000000000000000000" } BigNumber { value: "1000000000000000000000000" } BigNumber { value: "2000000000000000000" } BigNumber { value: "1000000000000000000000000" } 0x8Aa99DDA2131d0BB6D8816C1901118889B4619e9 1683805001
+Error: insufficient funds for intrinsic transaction cost [ See: https://links.ethers.org/v5-errors-INSUFFICIENT_FUNDS ] (error={"name":"ProviderError","_stack":"ProviderError: insufficient funds for gas * price + value\n    at HttpProvider.request (/home/jeje/Infrastructure/deployer/node_modules/hardhat/src/internal/core/providers/http.ts:88:21)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at EthersProviderWrapper.send (/home/jeje/Infrastructure/deployer/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)","code":-32000,"_isProviderError":true}, method="sendTransaction", transaction="0xf87110843b9aca00836b22d894d1a68d5bfa15cb375552492993fc38396eebc1b1871ec44e9e152a0084d0e30db0820a95a0de7089b21615820fa70d73ce23d47e1745f578f613fe144f041369786bb21ad7a02219f791e39a2ec4c197449d0f57b22acdf1bdf3bc244a9c1669a59b08530cf0", code=INSUFFICIENT_FUNDS, version=providers/5.7.2)
+    at Logger.makeError (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/logger/src.ts/index.ts:269:28)
+    at Logger.throwError (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/logger/src.ts/index.ts:281:20)
+    at checkError (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/providers/src.ts/json-rpc-provider.ts:98:16)
+    at EthersProviderWrapper.<anonymous> (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/providers/src.ts/json-rpc-provider.ts:642:20)
+    at step (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:48:23)
+    at Object.throw (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:29:53)
+    at rejected (/home/jeje/Infrastructure/deployer/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:21:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  reason: 'insufficient funds for intrinsic transaction cost',
+  code: 'INSUFFICIENT_FUNDS',
+  error: ProviderError: insufficient funds for gas * price + value
+      at HttpProvider.request (/home/jeje/Infrastructure/deployer/node_modules/hardhat/src/internal/core/providers/http.ts:88:21)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at EthersProviderWrapper.send (/home/jeje/Infrastructure/deployer/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20),
+  method: 'sendTransaction',
+  transaction: {
+    nonce: 16,
+    gasPrice: BigNumber { value: "1000000000" },
+    gasLimit: BigNumber { value: "7021272" },
+    to: '0xd1a68d5bFa15CB375552492993fC38396eebC1b1',
+    value: BigNumber { value: "8660091240000000" },
+    data: '0xd0e30db0',
+    chainId: 1337,
+    v: 2709,
+    r: '0xde7089b21615820fa70d73ce23d47e1745f578f613fe144f041369786bb21ad7',
+    s: '0x2219f791e39a2ec4c197449d0f57b22acdf1bdf3bc244a9c1669a59b08530cf0',
+    from: '0x80AF38eCD0dE67B02552A558cFD144a38D544160',
+    hash: '0xa6f32af6bd2942887f4240c138d3f30448b4a5f54c6e7ee7a593944ac67355dd',
+    type: null,
+    confirmations: 0
+  },
+  transactionHash: '0xa6f32af6bd2942887f4240c138d3f30448b4a5f54c6e7ee7a593944ac67355dd'
+}
