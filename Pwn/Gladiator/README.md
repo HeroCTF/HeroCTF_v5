@@ -11,7 +11,7 @@ Will you come out of the arena alive?
 <img class="img-fluid" src="https://media.discordapp.net/attachments/814526151061274674/1105180104201617500/ghizmo_Very_realistic_Amazonian_arena_with_a_gladiator_entering_b49c9c2e-4e54-432a-b37a-bfa014a8828c.png">
 
 Format : Hero{flag}<br>
-Author : Ghizmo x SoEaY
+Author : Ghizmo x SoEasY
 
 ## Files
 
