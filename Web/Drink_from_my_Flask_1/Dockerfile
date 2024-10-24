@@ -19,7 +19,7 @@ USER root
 
 
 # Setup Vulnerable Flask Apps
-RUN pip3 install flask==2.2.3 pyjwt
+RUN pip3 install werkzeug==2.2.2 flask==2.2.3 pyjwt
 RUN mkdir -p /var/www/app /var/www/dev /var/www/config
 RUN ln -s /dev/urandom /var/www/config/urandom
 RUN chmod a+rwx /var/www/config
